@@ -9,16 +9,20 @@ function Login() {
       <h1>Login Screen</h1>
       <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4">
         {/* Logo */}
-        <div className="rounded-full border border-black z-50">
+        <div className="rounded-fullz-50">
           <Image
-            src="/sol.jpg"
+            onClick={authenticate}
+            // title="Logo"
+            src="/sol2.jpg"
             width={200}
             height={200}
-            className="object-cover rounded-full"
+            className="object-cover rounded-full hover:spin cursor-pointer"
           />
         </div>
         {/* Login btn */}
         <button
+          alt="Login to the MetaVerse"
+          title="Login to the MetaVerse"
           onClick={authenticate}
           className="bg-[#FE94FD] font-bold text-black rounded-lg p-5 animate-pulse border border-black z-50"
         >
@@ -26,7 +30,12 @@ function Login() {
         </button>
       </div>
       <div className="w-full h-screen">
-        <Image src="/bg.jpeg" layout="fill" objectFit="cover" />
+        <Image
+          src="/bg2.jpg"
+          layout="fill"
+          alt="background"
+          objectFit="cover"
+        />
       </div>
     </div>
   );
