@@ -9,14 +9,14 @@ function Login() {
       <h1>Login Screen</h1>
       <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4">
         {/* Logo */}
-        <div className="rounded-fullz-50">
+        <div className="rounded-full z-50 hover:spin cursor-pointer">
           <Image
             onClick={authenticate}
             // title="Logo"
             src="/sol2.jpg"
-            width={200}
-            height={200}
-            className="object-cover rounded-full hover:spin cursor-pointer"
+            width={220}
+            height={220}
+            className="object-cover rounded-full"
           />
         </div>
         {/* Login btn */}
@@ -29,7 +29,7 @@ function Login() {
           Login to the Metaverse
         </button>
       </div>
-      <div className="w-full h-screen">
+      <div className="w-full h-screen overflow-hidden">
         <Image
           src="/bg2.jpg"
           layout="fill"
