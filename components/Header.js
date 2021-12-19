@@ -17,7 +17,7 @@ function Header() {
             objectFit="cover"
             // width={100}
             // height={100}
-            className="rounded-full cursor-pointer hover:spin opacity-80 hover:opacity-100"
+            className="rounded-full cursor-pointer opacity-80 hover:opacity-100 hover:spin"
           />
         </div>
         <div className="text-left col-span-4 lg:text-center">
@@ -25,7 +25,7 @@ function Header() {
             <Avatar logoutOnPress />
           </div>
 
-          <h1 className="text-3xl">Welcome to the PAPAFAM Metaverse</h1>
+          <h1 className="text-3xl">Welcome to the Land of Misfits Metaverse</h1>
 
           <h2 className="text-5xl font-bold truncate">{user.getUsername()}</h2>
 
