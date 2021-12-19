@@ -7,7 +7,7 @@ function Header() {
   const { user, logout } = useMoralis();
 
   return (
-    <div className="sticky top-0 p-5 z-50 bg-black shadow-sm text-pink-500 border-b-2 border-pink-700">
+    <div className="sticky top-0 p-5 z-50 bg-black shadow-sm border-b-2 border-pink-700 text-pink-500">
       <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
         <div className="relative h-24 w-24 mx-auto hidden lg:inline-grid">
           <Image
@@ -20,20 +20,15 @@ function Header() {
             className="rounded-full cursor-pointer hover:spin opacity-80 hover:opacity-100"
           />
         </div>
-        <div className="col-span-4 text-left lg:text-center">
+        <div className="text-left col-span-4 lg:text-center">
           <div className="relative h-48 w-48 lg:mx-auto border-pink-500 border-8 rounded-full">
             <Avatar logoutOnPress />
           </div>
 
-          {/* Welcome message */}
-          <h1 className="lg:text-3xl text-xl">Welcome to Metaverse</h1>
+          <h1 className="text-3xl">Welcome to the PAPAFAM Metaverse</h1>
 
-          {/* Username */}
-          <h2 className="lg:text-5xl text-2xl font-bold truncate">
-            {user.getUsername()}
-          </h2>
+          <h2 className="text-5xl font-bold truncate">{user.getUsername()}</h2>
 
-          {/* Change username component */}
           <ChangeUsername />
         </div>
       </div>

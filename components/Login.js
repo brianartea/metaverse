@@ -9,14 +9,14 @@ function Login() {
       <h1>Login Screen</h1>
       <div className="flex flex-col absolute z-50 h-4/6 items-center justify-center w-full space-y-4">
         {/* Logo */}
-        <div className="rounded-full z-50 hover:spin cursor-pointer">
+        <div className="z-50">
           <Image
             onClick={authenticate}
             // title="Logo"
             src="/sol2.jpg"
             width={220}
             height={220}
-            className="object-cover rounded-full"
+            className="object-cover rounded-full hover:opacity-75 hover:spin cursor-pointer"
           />
         </div>
         {/* Login btn */}
